@@ -10,7 +10,7 @@ const MenS = () => {
     const history = useHistory()
 
     useEffect(() => {
-        fetch('http://localhost:5000/products/men')
+        fetch('https://shrouded-ocean-12161.herokuapp.com/products/men')
             .then(res => res.json())
             .then(data => setAllProducts(data))
     }, [])

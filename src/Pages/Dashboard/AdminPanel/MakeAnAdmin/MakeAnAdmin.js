@@ -10,7 +10,7 @@ const MakeAnAdmin = () => {
     const onSubmit = data => {
         const email = emailRef.current.value;
         data.email = email;
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://shrouded-ocean-12161.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
 

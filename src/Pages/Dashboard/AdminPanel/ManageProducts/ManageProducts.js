@@ -11,7 +11,7 @@ const ManageProducts = () => {
     useEffect(() => {
 
 
-        fetch(`http://localhost:5000/products`)
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/products`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
@@ -23,7 +23,7 @@ const ManageProducts = () => {
 
     const handleDelete = (id) => {
         setIsChanging(true)
-        fetch(`http://localhost:5000/deletedProduct/${id}`, {
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/deletedProduct/${id}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' }
         })

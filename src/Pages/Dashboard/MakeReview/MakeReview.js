@@ -20,7 +20,7 @@ const MakeReview = () => {
 
         console.log(data);
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://shrouded-ocean-12161.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
 

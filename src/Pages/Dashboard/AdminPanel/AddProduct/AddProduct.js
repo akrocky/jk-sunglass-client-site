@@ -33,7 +33,7 @@ const AddProduct = () => {
 
 
         // //save the order to database
-        fetch('http://localhost:5000/addProduct', {
+        fetch('https://shrouded-ocean-12161.herokuapp.com/addProduct', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

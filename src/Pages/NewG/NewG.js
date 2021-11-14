@@ -11,7 +11,7 @@ const NewG = () => {
     const history = useHistory()
 
     useEffect(() => {
-        fetch('http://localhost:5000/products/new')
+        fetch('https://shrouded-ocean-12161.herokuapp.com/products/new')
             .then(res => res.json())
             .then(data => setAllProducts(data))
     }, [])

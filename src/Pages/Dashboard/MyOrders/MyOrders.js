@@ -11,7 +11,7 @@ const MyOrders = () => {
     useEffect(() => {
 
 
-        fetch(`http://localhost:5000/orders/${user?.email}`)
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/orders/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setOrders(data)
@@ -23,7 +23,7 @@ const MyOrders = () => {
 
     const handleDelete = (id) => {
         setIsChanging(true)
-        fetch(`http://localhost:5000/deletedOrder/${id}`, {
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/deletedOrder/${id}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' }
         })

@@ -25,7 +25,7 @@ const Purchase = () => {
 
         //save the order to database
         if (data.email) {
-            fetch('http://localhost:5000/orders', {
+            fetch('https://shrouded-ocean-12161.herokuapp.com/orders', {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(data)

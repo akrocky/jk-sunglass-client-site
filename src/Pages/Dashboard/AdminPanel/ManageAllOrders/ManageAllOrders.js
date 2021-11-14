@@ -10,7 +10,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => {
                 setOrders(data)
@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
     }, [isChanging])
     const handleDelete = (id) => {
         setIsChanging(true)
-        fetch(`http://localhost:5000/deletedOrder/${id}`, {
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/deletedOrder/${id}`, {
             method: 'DELETE',
             headers: { 'content-type': 'application/json' }
         })
@@ -33,7 +33,7 @@ const ManageAllOrders = () => {
     }
     const handleUpdated = (id, status) => {
         setIsChanging(true)
-        fetch(`http://localhost:5000/updateOrder?search=${id}&status=${status}`, {
+        fetch(`https://shrouded-ocean-12161.herokuapp.com/updateOrder?search=${id}&status=${status}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' }
         })

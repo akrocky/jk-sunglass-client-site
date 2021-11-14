@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 const UserReview = () => {
     const [reviewList, setReviewList] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://shrouded-ocean-12161.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviewList(data))
     }, [])
