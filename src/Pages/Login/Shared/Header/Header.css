@@ -1,0 +1,22 @@
+.logo {
+
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+
+.mg {
+    margin: 0 30px;
+}
